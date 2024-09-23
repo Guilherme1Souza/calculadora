@@ -22,3 +22,10 @@ function limpar() {
     valorAtual = '';
     document.getElementById('display').value = '';
 }
+
+function apagar() {
+    if (valorAtual !== '') {
+        valorAtual = valorAtual.slice(0, -1);
+        document.getElementById('display').value = valorAtual;
+    }
+}
